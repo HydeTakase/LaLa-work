@@ -1,0 +1,24 @@
+//package ex4;
+//
+//public class Ex4_4 {
+//
+//	public static void main(String[] args) {
+//		int[] numbers = new int[2];
+//		numbers[0] = new java.util.Random().nextInt(9) + 1;
+//		do {
+//			numbers[1] = new java.util.Random().nextInt(9) + 1;
+//		} while (numbers[1] == numbers[0]); {
+//			System.out.println("1桁の数字を入力してください");
+//
+//			int input = new java.util.Scanner(System.in).nextInt();
+//		
+//		for (int num : numbers) {
+//			if (input == num) {
+//				System.out.println("アタリ！");
+//			} else {
+//				System.out.println("はずれ");
+//			}
+//		}
+//
+//		}}
+//}
