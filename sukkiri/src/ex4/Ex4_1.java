@@ -10,6 +10,11 @@ public class Ex4_1 {
 		boolean[] answers = new boolean[3];
 		// 4-4
 		String[] names = new String[3];
+		
+		System.out.println(points);
+		System.out.println(weights);
+		System.out.println(answers);
+		System.out.println(names);
 	}
 
 }
