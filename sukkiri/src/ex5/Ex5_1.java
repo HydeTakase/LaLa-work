@@ -9,7 +9,7 @@ public class Ex5_1 {
 	public static void introduceOneself() {
 		String name = "Takase";
 		int age = 48;
-		float height = 175.0F;
+		double height = 175.0;
 		char eto = '虎';
 		
 		System.out.println("私の名前は" + name + "です。");
