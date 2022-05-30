@@ -28,7 +28,7 @@ public class Main307 {
 		m2.suffix = 'B';
 
 		//冒険の始まり
-		h.slip();
+//		h.slip();
 		m1.run();
 		m2.run();
 		h.run();
