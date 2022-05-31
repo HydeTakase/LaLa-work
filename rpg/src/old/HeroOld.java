@@ -1,16 +1,16 @@
 package old;
 
-public class Hero {
+public class HeroOld {
 	//	属性の定義（フィールドの宣言）
 	public String name;		//名前の宣言
 	public int hp;				//HPの宣言
 //	public Sword sword;			//武器の宣言
 	
 	//　コンストラクタの定義
-	public Hero() {			//引数のないコンストラクタを作成しておく
+	public HeroOld() {			//引数のないコンストラクタを作成しておく
 		this("ダミー");
 	}
-	public Hero(String name) {
+	public HeroOld(String name) {
 		this.name = name;
 		this.hp = 100;
 	}
