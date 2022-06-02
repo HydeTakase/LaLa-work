@@ -7,18 +7,18 @@ public class PoisonMatango extends Matango {
 	
 	int poisonCount = 5;
 	
-	public void attack(SuperHero h) {
+	public void attack(Hero h) {
 		super.attack(h);
 //		System.out.println("お化け毒キノコ" + this.suffix + "は、毒攻撃をした！");
 		
-		if (poisonCount > 0) {
+		if (this.poisonCount > 0) {
 			System.out.println("さらに毒の胞子をばらまいた！");
 			int heroDamage = h.hp / 5;
 			System.out.println(h.name + "は、" + heroDamage + "ポイントのダメージ");
 			h.hp -= heroDamage;
 			this.poisonCount -= 1;
-			System.out.println(h.name + "のHPは、" +h.hp);
-			System.out.println("残りの毒攻撃は" + poisonCount);
+			System.out.println(h.name + "のHPは、" + h.hp);
+			System.out.println("残りの毒攻撃は" + this.poisonCount);
 		}
 		
 	}

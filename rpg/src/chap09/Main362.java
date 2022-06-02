@@ -9,7 +9,7 @@ public class Main362 {
 		Hero h2 = new Hero();
 		
 //		System.out.println("h1:name " + h1.name);
-		System.out.println("h2:name " + h2.name);
+//		System.out.println("h2:name " + h2.name);
 
 	}
 

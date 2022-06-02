@@ -4,12 +4,12 @@ public class SuperHero extends Hero {		// Heroクラスの継承 extends
 // SuoerHeroに新しいメソッドを追加(Heroクラスとの差分を記入)
 	
 	public SuperHero() {
-		System.out.println("SuperHeroのコンストラクタが動作");
+		System.out.println("SuperHeroのコンストラクタ1が動作");
 	}
 	public SuperHero(String name) {
 		super(name);
 //		this.name = name;
-		System.out.println("SuperHeroのコンストラクタが動作");
+		System.out.println("SuperHeroのコンストラクタ2が動作");
 
 	}
 	public boolean flying;
@@ -22,8 +22,8 @@ public class SuperHero extends Hero {		// Heroクラスの継承 extends
 		System.out.println("着地した！");
 	}
 	public void run() {
-		ap[0] = 9;
+//		ap[0] = 9;
 		System.out.println(this.name + "は撤退した");
-		System.out.println(ap[0]);
+//		System.out.println(ap[0]);
 	}
 }
