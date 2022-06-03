@@ -13,6 +13,7 @@ public class Main {
 		Dancer dancer = new Dancer("ティファ");
 		SuperHero sh = new SuperHero("セフィロス");
 		Hero hero = new Hero("クラウド");
+		hero.setHp(200);
 		
 //		dancer.attack(m);
 //		dancer.run();
@@ -20,6 +21,7 @@ public class Main {
 		hero.attack(m);
 		hero.run();
 //		sh.sleep();
+		System.out.println(hero.getHp());
 	}
 
 }
