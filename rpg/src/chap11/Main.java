@@ -17,9 +17,9 @@ public class Main {
 //		dancer.attack(m);
 //		dancer.run();
 //		dancer.sleep();
-//		hero.attack(m);
+		hero.attack(m);
 		hero.run();
-		sh.sleep();
+//		sh.sleep();
 	}
 
 }

@@ -10,9 +10,9 @@ public class Main307 {
 		//勇者よ、この仮想世界に生まれよ！
 		Hero h = new Hero();
 		//フィールドに初期値をセット
-//		h.name = "ミナト";
-//		h.hp = 100;
-//		System.out.println("勇者" + h.name + "を生み出しました！");
+		h.setName("ミナト");
+		h.setHp(100);
+		System.out.println("勇者" + h.getName() + "を生み出しました！");
 		//勇者のメソッドを呼び出してゆく
 //		h.sit(5);
 //		h.slip();

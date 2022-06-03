@@ -9,8 +9,8 @@ public class Main343 {
 		s.name = "エクスカリバー";
 		s.damage = 10;
 		Hero h = new Hero();
-//		h.name = "クラウド";
-//		h.hp = 100;
+		h.setName("クラウド");
+		h.setHp(100);
 //		h.sword = s;
 //		System.out.println("現在の武器は" + h.sword.name);
 //		

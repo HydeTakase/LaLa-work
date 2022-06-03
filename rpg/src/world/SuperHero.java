@@ -23,7 +23,7 @@ public class SuperHero extends Hero {		// Heroクラスの継承 extends
 	}
 	public void run() {
 //		ap[0] = 9;
-		System.out.println(this.name + "は撤退した");
+		System.out.println(this.getName() + "は撤退した");
 //		System.out.println(ap[0]);
 	}
 }
