@@ -1,5 +1,7 @@
 package garden;
 
+import garden.Flower.Leaf;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -10,10 +12,13 @@ public class Main {
 		r.smell();
 		r.bloom();
 		
-		LanvinRose lr = new LanvinRose("ランバン");
-		
-		lr.bloom();
-		lr.smell();
+		Leaf l = f.makeLeaf();
+		System.out.println(l.getName());
+
+//		LanvinRose lr = new LanvinRose("ランバン");
+//		
+//		lr.bloom();
+//		lr.smell();
 
 	}
 

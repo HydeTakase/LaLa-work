@@ -4,7 +4,7 @@ public class Hero {
 	//	属性の定義（フィールドの宣言）
 	private int hp;
 	private String name;
-	Sword sword;
+	private Sword sword;
 	
 	public Hero() {
 		System.out.println("Heroのコンストラクタが動作");
@@ -26,6 +26,13 @@ public class Hero {
 		this.name = name;
 	}
 	
+	public Sword getSword() {
+		return sword;
+	}
+	public void setSword(Sword sword) {
+		this.sword = sword;
+	}
+
 	//	操作の定義	
 	public void attack(Matango m) {
 		System.out.println(this.name + "の攻撃！");

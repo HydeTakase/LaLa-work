@@ -1,23 +1,24 @@
 package chap12;
 
-import world.Character;
 import world.Matango;
+import world.Wand;
 import world.Wizard;
 
 public class Main471 {
 
 	public static void main(String[] args) {
+		Wand wa = new Wand();
 		
-		Character c = new Wizard();
-		if (c instanceof Wizard) {
-			System.out.println("yes!");
-		}
-		Wizard w = (Wizard)c;
+		Wizard w = new Wizard(wa);
+//		if (c instanceof Wizard) {
+//			System.out.println("yes!");
+//		}
+//		Wizard w = (Wizard)c;
 		Matango m = new Matango();
 		
-		w.name = "アサカ";
-		w.attack(m);
-		w.fireball(m);
+		w.setName("アサカ");
+//		w.attack(m);
+//		w.fireball(m);
 		
 //		if (c instanceof Hero) {
 //			Hero h = (Hero)c;

@@ -1,16 +1,16 @@
 package world;
 
 public class Animal {
-	public String type;
-	public String name;
-	public String say;
-	public int hp = 20;
+	private String type;
+	private String name;
+	private String say;
+	private int hp = 20;
 	
 	public Animal() {
 		this.type = "アニマル";
 	}
-	public Animal(String type) {
-		this.type = type;
+	public Animal(String name) {
+		this.name = name;
 	}
 	
 	public void cry() {
@@ -24,5 +24,29 @@ public class Animal {
 	public void run() {
 		System.out.println(this.name + "は走った");
 		this.hp -= 1;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getSay() {
+		return say;
+	}
+	public void setSay(String say) {
+		this.say = say;
+	}
+	public int getHp() {
+		return hp;
+	}
+	public void setHp(int hp) {
+		this.hp = hp;
 	}
 }
