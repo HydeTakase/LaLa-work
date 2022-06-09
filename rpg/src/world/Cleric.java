@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class Cleric {
 	// 属性を定義
-	public String name;
-	public int hp = 50;
-	public final int MAX_HP = 50;
-	public int mp = 10;
-	public final int MAX_MP = 10;
+	private String name;
+	private int hp = 50;
+	public static final int MAX_HP = 50;
+	private int mp = 10;
+	public static final int MAX_MP = 10;
 	// メソッドを定義
 	public void selfAid() {
 		System.out.println(this.name + "は、セルフエイドを唱えた！");
@@ -36,4 +36,34 @@ public class Cleric {
 		return recover; 
 		
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
+	public int getMp() {
+		return mp;
+	}
+
+	public void setMp(int mp) {
+		this.mp = mp;
+	}
+
+	@Override
+	public String toString() {
+		return "Cleric [name=" + name + ", hp=" + hp + ", mp=" + mp + "]";
+	}
+
 }
