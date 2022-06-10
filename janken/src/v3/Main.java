@@ -4,24 +4,28 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("NINZU:" + Const.NINZU);
-		Com com1 = new Com(new RandomNextHand());
-		com1.setName("コム1");
-		com1.setHand();
-		com1.setResult("drow");
-		com1.setNextHand(new CleverNextHand(com1));
+		
+		// コム1
+		Com com1 = new Com(new CleverNextHand());
+		com1.setName("コム１");
+		
+		// コム2
+		Com com2 = new Com(new RandomNextHand());
+		com2.setName("アリス");
+		
+		// ユーザー
 		User user = new User(new InputNextHand());
-		user.setName("ユーザー");
-
+		user.setName("サスケ");
+		
 		Game game = new Game();
 		do {
-			user.setHand();
 			com1.setHand();
-
-			game.judge(com1, user);
-			game.dispResult(com1, user);
+	       com2.setHand();
+			user.setHand();
+			game.judge(com1, com2, user);
+			game.dispResult(com1, com2, user);
 		} while (game.isNext());
-
-		System.out.println("Game終了です。Bye!!");
+		System.out.println("bye!");
 	}
 
 }
