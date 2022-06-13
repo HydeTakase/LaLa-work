@@ -25,22 +25,13 @@ public class Ex16_2 {
 		userList.put(h1, 3);
 		userList.put(h2, 7);
 		
-		for (String key : userList.keySet()) {
+		for (User key : userList.keySet()) {
 			int value = userList.get(key);
-			System.out.println(key + "が倒した敵は" + value);
+			System.out.println(key.getName() + "が倒した敵は" + value);
 		}
 		
 
 	}
 	
-//	public class Hero {
-//		private String name;
-//		public Hero(String name) {
-//			this.name = name;
-//		}
-//		public String getName() {
-//			return this.name;
-//		}
-//	}
 
 }
