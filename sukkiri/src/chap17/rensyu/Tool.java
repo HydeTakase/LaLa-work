@@ -14,11 +14,11 @@ public class Tool {
 				num = Integer.parseInt(numText);
 				isNum = true;
 	
-				} catch (NumberFormatException e) {
+			} catch (NumberFormatException e) {
 					e.printStackTrace();
-				}
+			}
 
-			} while (isNum == false); 
+		} while (isNum == false); 
 		return num;
 
 			

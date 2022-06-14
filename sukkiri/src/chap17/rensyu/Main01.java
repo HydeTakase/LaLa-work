@@ -6,7 +6,8 @@ public class Main01 {
 		Tool t = new Tool();
 		int	num = t.getNum();
 		System.out.println("数字: " + num);
-
+		
 	}
 
 }
+

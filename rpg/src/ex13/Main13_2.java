@@ -1,6 +1,7 @@
 package ex13;
 
 import world.Hero;
+import world.Matango;
 import world.Wand;
 import world.Wizard;
 
@@ -10,6 +11,8 @@ public class Main13_2 {
 		Wand wa = new Wand();
 
 		Wizard w = new Wizard();
+		
+		Matango m = new Matango();
 		
 		w.setName("アサカ");
 		w.setHp(50);
@@ -21,6 +24,7 @@ public class Main13_2 {
 		Hero h = new Hero();
 		h.setName("ミナト");
 		w.heal(h);
+		w.fireball(m);
 
 	}
 
